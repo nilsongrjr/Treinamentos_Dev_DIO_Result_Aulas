@@ -66,6 +66,11 @@ nothing to commit, working tree clean
 
 6 - Neste momento o conteúdo já está pronto para ser commitado no repositório do Git. 
 
+7 - Executar como exemplo abaixo:
+
+git commit -m "Inclusão do code (HTML, CSS e JS) da pagina Pokedex." 
+
+
 7 - Executar o comando git push origin main
 
 nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
