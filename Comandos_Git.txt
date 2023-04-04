@@ -71,7 +71,7 @@ nothing to commit, working tree clean
 git commit -m "Inclusão do code (HTML, CSS e JS) da pagina Pokedex." 
 
 
-7 - Executar o comando git push origin main
+8 - Executar o comando git push origin main
 
 nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
 $ git push origin main
@@ -84,5 +84,26 @@ Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/nilsongrjr/Treinamentos_Dev_DIO_Result_Aulas.git
    37c8913..48d81d9  main -> main
 
+
+Outros.......
+
+9 - Para verificar log "git log --oneline"
+
+PS C:\DEV_WEB\DIO\Desafios\js-developer-pokedex> git log --oneline
+f2fc52f (HEAD -> main) Adição de modificações
+627a1ca (origin/main, origin/HEAD) Create README.md
+9531803 Adição do projeto finalizado
+89c7c06 adição do projeto base
+
+10 - Para validação do local remoto "git remote -v"
+
+PS C:\DEV_WEB\DIO\Desafios\js-developer-pokedex> git remote -v
+origin  git@github.com:nilsongrjr/js-developer-pokedex.git (fetch)
+origin  git@github.com:nilsongrjr/js-developer-pokedex.git (push)
+
+11 - Validação da "Branch" git branch
+
+PS C:\DEV_WEB\DIO\Desafios\js-developer-pokedex> git branch
+* main
 
 
