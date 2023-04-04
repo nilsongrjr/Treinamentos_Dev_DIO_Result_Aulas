@@ -1,0 +1,83 @@
+Para transferir um projeto local ao repositório do GIT:
+
+1 - Criar a pasta/estruturta no gitHub;
+2 - Usando o exemplo da estrutura criada 
+https://github.com/nilsongrjr/Treinamentos_Dev_DIO_Result_Aulas.git
+
+Continuação....... iniciar o serviço do Git Bash na pasta local, direcionando o caminho do repositório do GitHub como demostrado a seguir:
+
+ git clone https://github.com/nilsongrjr/Treinamentos_Dev_DIO_Result_Aulas.git
+
+3 - Digite git status para validação do processo, após acessar a pasta clonada, neste caso:
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git
+$ ls
+Treinamentos_Dev_DIO_Result_Aulas/
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git
+$ cd Treinamentos_Dev_DIO_Result_Aulas/
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+4 - Transferir as pastas/arquivos que deseja enviar para o repositório
+5 - Digit git add . ou depois git add *
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
+$ git add *
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Aulas_JS_Pokedex/assets/css/global.css
+        new file:   Aulas_JS_Pokedex/assets/css/pokedex.css
+        new file:   Aulas_JS_Pokedex/assets/js/main.js
+        new file:   Aulas_JS_Pokedex/assets/js/poke-api.js
+        new file:   Aulas_JS_Pokedex/assets/js/pokemon-model.js
+        new file:   Aulas_JS_Pokedex/index.html
+
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
+$ git commit -m "Inclusão do code (HTML, CSS e JS) da pagina Pokedex."
+[main 48d81d9] Inclusão do code (HTML, CSS e JS) da pagina Pokedex.
+ 6 files changed, 308 insertions(+)
+ create mode 100644 Aulas_JS_Pokedex/assets/css/global.css
+ create mode 100644 Aulas_JS_Pokedex/assets/css/pokedex.css
+ create mode 100644 Aulas_JS_Pokedex/assets/js/main.js
+ create mode 100644 Aulas_JS_Pokedex/assets/js/poke-api.js
+ create mode 100644 Aulas_JS_Pokedex/assets/js/pokemon-model.js
+ create mode 100644 Aulas_JS_Pokedex/index.html
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+6 - Neste momento o conteúdo já está pronto para ser commitado no repositório do Git. 
+
+7 - Executar o comando git push origin main
+
+nilson@PC MINGW64 /c/DEV_WEB/DIO/POKEDEX/git/Treinamentos_Dev_DIO_Result_Aulas (main)
+$ git push origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 3.18 KiB | 3.18 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nilsongrjr/Treinamentos_Dev_DIO_Result_Aulas.git
+   37c8913..48d81d9  main -> main
+
+
+
